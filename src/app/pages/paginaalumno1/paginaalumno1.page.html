@@ -1,0 +1,17 @@
+<app-header titulo="Página Uno"></app-header>
+
+<ion-content>
+    
+    <ion-button expand="full" (click)="mostrarAlertaConfirmacion()" class="ion-margin" color="danger">Mostrar Alerta Confirmación</ion-button>
+    <ion-button expand="full" (click)="mostrarAlertaFormulario()" class="ion-margin" color="warning">Mostrar Alerta Confirmación</ion-button>
+
+    <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input [(ngModel)]="modeloUsuario"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="modeloContrasena" type="password"></ion-input>
+    </ion-item>
+    <ion-button expand="full" (click)="validarLogin()" class="ion-margin" color="danger">Ingresar</ion-button>
+</ion-content>

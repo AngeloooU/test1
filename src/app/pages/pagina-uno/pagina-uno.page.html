@@ -1,0 +1,31 @@
+<app-header titulo="Página Dos"> 
+</app-header>
+
+<ion-toolbar> 
+    <ion-buttons slot="start" >
+
+      <ion-back-button top-left defaultHref="/" text="atras" color="primary">
+      
+    </ion-back-button>
+
+    </ion-buttons>
+
+</ion-toolbar>
+<ion-content>
+
+    <ion-item class="ion-margin">
+        <ion-label position="floating">Nombre de usuario</ion-label>
+        <ion-input [(ngModel)]="modeloUsuario"></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="modeloContrasena" type="password"></ion-input>
+    </ion-item>
+    <ion-button (click)="validarLogin()" color="danger" routerLink="/paginadocente1" expand="full" class="ion-margin">
+        Ingresar
+    </ion-button>
+    <ion-button (click)="mostrarAlerta()" color="success" routerLink="/olvida-contra" expand="full" class="ion-margin">
+      ¿Olvidaste tu contraseña?
+  </ion-button>
+</ion-content>
+

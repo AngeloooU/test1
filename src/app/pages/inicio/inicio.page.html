@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+
+   
+    <ion-item-divider color="none">
+      <ion-title> <ion-label>
+        BIENVENID@ A "REGISTRAPP"
+        
+      </ion-label></ion-title>
+    </ion-item-divider>
+
+    <ion-title> </ion-title>
+    <ion-text color="medium">
+      <h5></h5>
+    </ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h5>Bienvenid@ a la aplicacion REGISTRAPP, por favor seleccione el tipo de usuario a continuación:</h5>
+  <img class="logo1" src="assets/icon/LOGO1.png" />
+    
+  <ion-button class="botonesinicio1" expand="full"color="success" routerLink="/pagina-uno">Docentes</ion-button>
+  <ion-button class="botonesinicio2" expand="full"color="success" routerLink= "/pagina-dos">Alumnos</ion-button>
+  <ion-button class="botonesinicio3" expand="full"(click)="mostrarAlertaFormulario()" class="ion-margin" color="primary">Regístrate</ion-button>
+
+
+</ion-content>

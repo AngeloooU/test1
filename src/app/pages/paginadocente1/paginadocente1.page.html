@@ -1,0 +1,38 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Generador de codigo QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+
+<!-- Toggles in a List -->
+<ion-button style="float: right;" size="SALIDA" routerLink="/inicio">Salir</ion-button>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Deseo recibir el codigo QR por correo</ion-label>
+    <ion-toggle [(ngModel)]="enviarcorreo"></ion-toggle>
+  </ion-item>
+<p></p>
+<p></p>
+
+<ion-button class="QR1" onclick="mostrar()" expand="block"> Generar QR     </ion-button>
+<p></p>
+
+  <center><img class="QR" src="assets/icon/QRCode.png" /></center>
+
+  
+</ion-list>
+
+  
+</ion-content>
